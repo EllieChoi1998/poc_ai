@@ -9,7 +9,7 @@ class Gemma3Engine():
     def __init__(self):
         model_id = "google/gemma-3-4b-it" 
         self.model = Gemma3ForConditionalGeneration.from_pretrained(
-            model_id, device_map="auto"
+            model_id, device_map="cuda:0", torch_dtype="auto"
         ).eval()
 
         self.processor = AutoProcessor.from_pretrained(model_id)
