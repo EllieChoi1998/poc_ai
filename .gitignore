@@ -1,3 +1,4 @@
-./data
+./data/*
 ./paddleocr
-./workspace
+./workspace/*
+./src/__pycache__/*
