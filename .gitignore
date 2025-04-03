@@ -2,3 +2,5 @@
 ./paddleocr
 ./workspace/*
 ./src/__pycache__/*
+./output/*
+./PaddleX/*
